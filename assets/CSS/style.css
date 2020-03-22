@@ -1,36 +1,121 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.container {
+  width: 60%;
+  min-width: 490px;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #eee;
+  border: solid 1px #c0c0c0;
+  overflow: hidden;
+  padding: 20px;
+  font-family: arial;
+  box-shadow: 0 0 20px rgb(150, 150, 150);
 }
 
-
-body {
-    font-family: Arial, Helvetica, sans-serif ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 100vw;
-    min-height: 100vh;
-}
-main {
-    border: 3px solid black;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    flex-flow: column;
+.main_title {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(78, 130, 226);
+  font-size: 60px;
+  background-color: #fff;
 }
 
-div.title {
-    border: 3px solid darkgray;
-    text-align: center;
+.Message {
+  padding: 20px 0;
+  font-size: 1.3em;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 24px;
+  margin: 20px 0;
 }
 
-div.game {
-    border: 3px solid darkgray;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+.random_number_container {
+  width: 70px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 1px #555;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 20px 0;
+  color: goldenrod;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.wins_block {
+  width: 240px;
+  color: green;
+  background-color: #dfdbdb;
+  padding: 10px 0px 10px 10px;
+  font-weight: bold;
+}
+
+.losses_block {
+  width: 240px;
+  font-weight: bold;
+  background-color: #dfdbdb;
+  padding: 10px 0px 10px 10px;
+  color: red;
+}
+
+.crystals {
+  margin-top: 20px;
+}
+
+.crystal {
+  display: inline-block;
+  width: 64px;
+  background-position: 5px 5px;
+  height: 58px;
+  margin-right: 10px;
+  padding: 5px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.crystal:hover {
+   box-shadow: 2px 2px 2px #aaa,
+               -2px -2px 2px #fff;
+               
+}
+
+.crystal:active {
+  opacity: 1;
+  box-shadow: inset 2px 2px 2px #aaa,
+              inset -2px -2px 2px #fff;
+}
+
+.ruby {
+  background-image: url('../images/ruby.png');
+}
+
+.diamond {
+  background-image: url('../images/diamond.png');
+}
+
+.amber {
+  background-image: url('../images/amber.png');
+}
+
+.jade {
+  background-image: url('../images/jade.png');
+}
+
+.score_container {
+  width: 230px;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 30px 10px;
+  border-radius: 5px;
+  color: #777;
+}
+
+#total_score {
+  font-size: 2em;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: 15px;
+  background-color: #000;
 }
